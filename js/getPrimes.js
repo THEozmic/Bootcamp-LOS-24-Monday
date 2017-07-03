@@ -15,7 +15,6 @@ function getPrimes (number) {
     let nonPrimes = [];
 
     for (let i = 2; i <= number; ++i) {
-        console.log("i: " + i);
       if (nonPrimes[i] == undefined) { // not in nonPrimes then...
           // it's a prime number
           primes.push(i);
