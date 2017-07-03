@@ -1,0 +1,23 @@
+{
+  "name": "bootcamp-los-24-monday",
+  "version": "1.0.0",
+  "description": "A getPrimes function that takes an integer value n as argument and generates prime numbers from 0 to n",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THEozmic/Bootcamp-LOS-24-Monday.git"
+  },
+  "author": "THEozmic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THEozmic/Bootcamp-LOS-24-Monday/issues"
+  },
+  "homepage": "https://github.com/THEozmic/Bootcamp-LOS-24-Monday#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
