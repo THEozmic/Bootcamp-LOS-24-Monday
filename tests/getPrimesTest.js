@@ -1,13 +1,17 @@
-let assert = chai.assert;
+const chai = require('chai');
+
+const getPrimes = require('../js/getPrimes');
+const assert = chai.assert;
+
 let getPrimesReturnVal;
-describe ('getPrimes', function () {
+describe ('getPrimes', () => {
   
-  it ('should return array', function () {
+  it ('should return array', () => {
     getPrimesReturnVal = getPrimes(5);
     assert.isArray(getPrimesReturnVal);
   });
 
-  it ('should return an array that ends with value of "n"', function () {
+  it ('should return an array that ends with value of "n"', () => {
       let n = 5;
       getPrimesReturnVal = getPrimes(n);
       let lengthOfReturnVal = getPrimesReturnVal.length;
@@ -22,12 +26,12 @@ describe ('getPrimes', function () {
       assert(getPrimes("a") == false);
   });
 
-  it ('should return an array that starts with "2"', function () {
+  it ('should return an array that starts with "2"', () => {
       getPrimesReturnVal = getPrimes(5);
       assert.equal(getPrimesReturnVal[0], 2);
   });
 
-  it ('should have returned array be prime numbers of "n"', function () {
+  it ('should have returned array be prime numbers of "n"', () => {
       getPrimesReturnVal = getPrimes(5);
       let expectedVal = [2, 3, 5] //array of 5's prime numbers
       for (let i = 0; i < expectedVal.length; i++) {
@@ -35,7 +39,7 @@ describe ('getPrimes', function () {
       }
   });
 
-  it ('should be of type function', function () {
+  it ('should be of type function', () => {
     assert.isFunction(getPrimes);
   });
 
@@ -43,14 +47,14 @@ describe ('getPrimes', function () {
     assert(getPrimes(0) == false);
   });
 
-  it ('should have every number in array returned be positive', function () {
+  it ('should have every number in array returned be positive', () => {
       getPrimesReturnVal = getPrimes(5);
       for (let i in getPrimesReturnVal) {
           assert(i > -1);
       }
   });
 
-  it ('should not return undefined', function () {
+  it ('should not return undefined', () => {
       getPrimesReturnVal = getPrimes(5);
       assert.isDefined(getPrimesReturnVal);
   })

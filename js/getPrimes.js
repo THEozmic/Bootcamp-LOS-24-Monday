@@ -1,4 +1,5 @@
-function getPrimes (number) {
+module.exports = 
+getPrimes = (number) => {
     
     if (typeof number == "undefined") {
         console.log("getPrimes requires a parameter of positive integer, greater than 1");
